@@ -1,0 +1,118 @@
+/* Common Styles */
+.hero-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure wrapping for responsive design */
+}
+
+.hero-heading {
+    font-size: 72px;
+    margin-bottom: 20px;
+    max-width: 700px; /* Set a max-width for better control */
+    text-align: left; /* Center heading text on smaller screens */
+}
+
+.vector-img {
+    margin-bottom: 20px;
+    width: auto;
+}
+.paragraph {
+    font-size: 24px;
+    color: #888888;
+    max-width: 400px; /* Set max-width to control width on large screens */
+    text-align: left; /* Center paragraph text on smaller screens */
+}
+
+.signup {
+    display: flex;
+    gap: 10px; /* Space between input and button */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow input and button to stack on small screens */
+    width: 100%; /* Make the signup section responsive */
+}
+
+input {
+    padding: 15px;
+    border: 1px solid #888888;
+    border-radius: 8px;
+    font-size: 16px;
+    flex: 1; /* Allow input to grow */
+    min-width: 60%; /* Minimum width for input */
+}
+
+input:hover {
+    border-color: #32e1a2;
+}
+
+.hero-button {
+    padding: 15px;
+    background-color: #2c2c2c;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    min-width: 180px; /* Set a minimum width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* Prevent button from shrinking */
+}
+.hero-button:hover {
+    background-color: #32e1a2;
+    color: #2c2c2c;
+}
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+@media screen and (max-width: 870px) {
+    .hero-section {
+        padding: 30px; /* Reduced padding for smaller screens */
+    }
+    .hero-heading {
+        font-size: 48px;
+        width: auto;
+    }
+
+    .signup {
+        flex-direction: column; /* Stack input and button */
+        width: 100%; /* Full width for mobile */
+        align-items: stretch; /* Stretch input and button */
+    }
+
+    input {
+        width: auto; /* Full width input */
+        margin-bottom: 10px; /* Space between input and button */
+    }
+
+    .hero-button {
+        width: 100%; /* Full width button */
+        margin: 0; /* Remove extra margin */
+    }
+
+    .hero-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hero-heading {
+        font-size: 36px; /* Smaller heading for tiny screens */
+    }
+    .paragraph {
+        font-size: 18px; /* Smaller paragraph for readability */
+    }
+    .hero-button {
+        padding: 10px; /* Reduced padding for small screens */
+        font-size: 14px; /* Smaller button text */
+        width: 100%; /* Full width for alignment */
+    }
+    input {
+        width: 100%; /* Full width for alignment */
+        margin-bottom: 10px; /* Add space for visual separation */
+    }
+}

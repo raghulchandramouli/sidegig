@@ -1,0 +1,67 @@
+/* Footer.css */
+.footer {
+  background-color: black; /* Dark background color */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  flex: 1; /* Pushes the logo to the far left */
+}
+
+.footer-logo img {
+  max-width: 120px;
+}
+
+.footer-content {
+  text-align: center;
+  flex: 1; /* Centers the copyright text */
+}
+
+.footer-content p {
+  color: #ffffff; /* White color for text */
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  flex: 1; /* Pushes the icons to the far right */
+  justify-content: flex-end; /* Aligns icons to the right */
+}
+
+.social-icon {
+  color: #ffffff; /* Icon color */
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  color: #5ee3bd; /* Hover effect color */
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo,
+  .footer-content,
+  .footer-icons {
+    flex: unset; /* Reset flex properties for mobile view */
+    margin: 10px 0;
+  }
+}

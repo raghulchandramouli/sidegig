@@ -1,0 +1,100 @@
+/* Common Styles */
+.feautres-section {
+    padding: 40px;
+}
+
+.feautres-heading h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.feautres-paragraph p {
+    font-size: 20px;
+    color: #888888;
+    max-width: 600px;
+    text-align: center;
+}
+
+.feautres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px; /* Space between each feature box */
+    margin: 40px auto; /* Center the content with even margins */
+}
+
+/* Individual Feature Boxes */
+.swipe, .alerts, .privacy {
+    background-color: #a2f6d6; /* Apply green background */
+    padding:50px 10px;
+    border-radius: 10px;
+    width: 29%; /* Ensure three boxes per row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.chat, .feedback, .skills {
+    background: #f8f8f8;
+    padding: 50px 10px;
+    border-radius: 10px;
+    width: 29%; /* Ensure three boxes per row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.swipe:hover, .alerts:hover, .privacy:hover,
+.chat:hover, .feedback:hover, .skills:hover {
+    transform: translateY(-5px);
+    border: 2px solid #5ae09f;
+}
+
+.swipe h2, .alerts h2, .privacy h2,
+.chat h2, .feedback h2, .skills h2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.swipe p, .alerts p, .privacy p,
+.chat p, .feedback p, .skills p {
+    font-size: 20px;
+    color: #666666;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .swipe, .chat, .alerts, .feedback, .privacy, .skills {
+        width: 45%; /* Two boxes per row for medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feautres {
+        gap: 30px; /* Reduce gap for smaller screens */
+    }
+
+    .swipe, .chat, .alerts, .feedback, .privacy, .skills {
+        width: 100%; /* Single box per row for smaller screens */
+    }
+
+    .feautres-heading h1 {
+        font-size: 36px; /* Adjust heading size */
+    }
+
+    .feautres-paragraph p {
+        font-size: 18px; /* Adjust paragraph font size */
+    }
+}

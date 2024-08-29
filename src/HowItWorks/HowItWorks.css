@@ -1,0 +1,19 @@
+.main-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+  .main-image {
+    max-width: 80%;
+  }
+}
+
+/* For very large screens */
+@media (min-width: 1200px) {
+  .main-image {
+    max-width: 60%;
+  }
+}
