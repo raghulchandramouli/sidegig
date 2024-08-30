@@ -25,7 +25,7 @@ const Header = () => {
           width={125}
         />
       </motion.div>
-      <motion.button
+      {/* <motion.button
         className="header-button"
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -33,7 +33,7 @@ const Header = () => {
         whileHover={{ scale: 1.1 }}
       >
         Get Started
-      </motion.button>
+      </motion.button> */}
     </motion.div>
   );
 };

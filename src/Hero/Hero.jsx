@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Hero.css";
 import vectorImg from "../assets/Vector.png";
-import heroImg from "../assets/Hero-image.png";
+import heroImg from "../assets/hero-img.png";
 import { db } from "../firebase"; // Import the initialized Firestore instance
 import { doc, updateDoc, arrayUnion } from "firebase/firestore"; // Import Firestore methods
 
