@@ -50,7 +50,14 @@ To set up the project locally, follow these steps:
     ```bash
     npm run dev
     ```
-    This will open the website in your default browser at `http://localhost:5173`.
+    This will open the website in your default browser at `http://localhost:3000`.
+
+4. **Build the Project:**
+    To create an optimized production build, run:
+   ```bash
+   npm run build
+   ```
+
 
 ## Built With
 
