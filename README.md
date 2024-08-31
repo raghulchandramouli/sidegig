@@ -1,7 +1,7 @@
 
 # SideGig Website
 
-The SideGig website is designed to introduce and promote the SideGig app, a platform connecting workers with potential clients for various gigs and freelance opportunities. The website provides all the information needed to learn about the app's features and to sign up.
+The SideGig website is designed to introduce and promote the SideGig app, connecting workers with potential clients for gigs and freelance opportunities. The website provides all the information needed to learn about the app's features and to sign up.
 
 ## Website Overview
 
@@ -48,22 +48,16 @@ To set up the project locally, follow these steps:
 3. **Run the development server:**
     Start the server to view the website locally:
     ```bash
-    npm start
+    npm run dev
     ```
     This will open the website in your default browser at `http://localhost:5173`.
 
-4. **Build the project:**
-    To create an optimized production build, run:
-    ```bash
-    npm run build
-    ```
-
 ## Built With
 
-- **React**: JavaScript library for building user interfaces.
+- **React with Vite**: Combines the power of React with Vite's lightning-fast bundling and hot module replacement, resulting in faster development and improved build performance.
 - **CSS**: Styling the components.
 - **Framer Motion**: Used for animations throughout the website.
 - **Material UI**: Used for icons.
 - **Firebase**: Hosting the live website.
 
-This version includes all necessary details for installing, running, and developing the website. Enjoy exploring the SideGig app and find your perfect gig!
+This version includes all the necessary details for installing, running, and developing the website. Enjoy exploring the SideGig app and find your perfect gig!
